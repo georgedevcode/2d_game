@@ -1,5 +1,16 @@
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+    //    EventQueue.invokeLater(() -> {
+    //         Application ex = new Application();
+    //         ex.setVisible(true);
+    //     });
+
+        EventQueue.invokeLater(() -> {
+            Image image = new Image();
+            image.setVisible(true);
+        });
     }
 }
